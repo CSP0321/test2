@@ -18,10 +18,10 @@ html_temp = """
 stc.html(html_temp)
 
 # ## 讀取 excel 檔
-df_original = pd.read_excel('testdata.xlsx')
+#df_original = pd.read_excel('testdata.xlsx')
 
 # ## 保存为Pickle文件:
-df_original.to_pickle('testdata.pkl')
+#df_original.to_pickle('testdata.pkl')
 
 @st.cache_data(ttl=3600, show_spinner="正在加載資料...")
 def load_data(url):
@@ -137,8 +137,6 @@ KBar_df['MA_short'] = KBar_df['close'].rolling(window=ShortMAPeriod).mean()
 
 #### 尋找最後 NAN值的位置
 last_nan_index_MA = KBar_df['MA_long'][::-1].index[KBar_df['MA_long'][::-1].apply(pd.isna)][0]
-
-
 
 #####  (ii) RSI 策略   #####
 #### 順勢策略
