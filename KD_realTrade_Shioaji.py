@@ -1,6 +1,6 @@
 # 載入必要函數
 import indicator,sys,time,datetime,haohaninfo,order_shioaji
-
+import talib
 import lineTool
 
 # 匯入 Shioaji 套件
