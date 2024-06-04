@@ -1,6 +1,7 @@
 # 載入必要套件
 import matplotlib.pyplot as plt
 import time
+import talib
 # 下單部位管理物件
 class Record():
     def __init__(self ):
