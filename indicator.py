@@ -2,6 +2,7 @@
 import requests,datetime,os,time
 import numpy as np
 import matplotlib.dates as mdates
+import talib
 from talib.abstract import *  # 載入技術指標函數
 
     
